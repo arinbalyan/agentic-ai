@@ -64,8 +64,7 @@ The system consists of the following components:
    ```
 
 3. Set up environment variables:
-   - Copy `.env.example` to `.env.local`
-   - Add your API keys to the `.env.local` file:
+   - `.env`
      ```
      GOOGLE_API_KEY=your_google_api_key
      OPENWEATHER_API_KEY=your_openweather_api_key
