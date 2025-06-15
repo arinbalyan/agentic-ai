@@ -1,0 +1,27 @@
+# Core dependencies
+langchain==0.1.0
+langchain-community==0.0.16
+python-dotenv==1.0.0
+pydantic==2.5.2
+requests==2.31.0  # Used by multiple agents to interact with various APIs (SpaceX, Weather, News, Movies, Crypto, Recipe)
+
+# Google Generative AI dependencies
+google-generativeai==0.3.2  # Used by General QA Agent
+google-api-python-client==2.108.0
+langchain-google-genai==0.0.5
+
+# Agent-specific dependencies
+wikipedia==1.4.0  # Used by Wikipedia Agent
+
+# Note: If you encounter ResourceExhausted: 429 errors, this indicates that your
+# Google Gemini API quota has been exceeded. You'll need to wait for the quota to reset
+# or upgrade your API plan.
+
+# API Keys Required:
+# - GOOGLE_API_KEY: For General QA Agent (Gemini models)
+# - OPENWEATHER_API_KEY: For Weather Agent
+# - NEWSAPI_API_KEY: For News Agent
+# - OMDB_API_KEY: For Movies Agent
+# - SPOONACULAR_API_KEY: For Recipe Agent
+# 
+# Note: SpaceX API and CoinGecko API do not require API keys for basic usage
